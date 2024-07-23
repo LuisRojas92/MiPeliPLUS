@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce - Contacto</title>
+    <link rel="stylesheet" href="Css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Page/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="nombre-sitio">
+        Mi <span class="nombre-sitio">Peli PLUS </span>
+      </h1>
+    </header>
+
+    <div class="contenedor-navegacion">
+      <nav class="nav-principal contenedor">
+        <a href="index.html"> Inicio</a>
+        <a href="galeria.html"> Galeria</a>
+        <a href="contacto.html"> Contacto</a>
+      </nav>
+    </div>
+
+    <!--Contenido principal -->
+
+    <main class="contenido-principal contendedor">
+      <h2 class="text-center">Contacto</h2>
+
+      <form class="formulario">
+        <fieldset>
+          <legend>Tus Datos</legend>
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input
+              class="input"
+              id="nombre"
+              type="text"
+              placeholder="Tu Nombre"
+              required
+            />
+          </div>
+          <!-- Aqui termina 1er form -->
+          <div class="campo">
+            <label for="asunto">Asunto:</label>
+            <input id="asunto" type="tel" placeholder="Tu Asunto" required />
+          </div>
+          <!-- Aqui termina 2do form -->
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="E-mail" required />
+          </div>
+
+          <!-- Aqui termina 3er de form -->
+          <div class="campo">
+            <label for="tel">Telefono:</label>
+            <input id="tel" type="tel" placeholder="Tu Telefono" required />
+          </div>
+          <!-- Aqui termina 4to de form -->
+          <div class="campo">
+            <label for="text">Mensaje:</label>
+            <textarea rows="10" cols="20" required> </textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>País</legend>
+          <div class="campo">
+            <label for="pais">País</label>
+            <select id="pais" required>
+              <option disabled>-- Seleccione --</option>
+              <option value="MX">Mexico</option>
+              <option value="CA">Canada</option>
+              <option value="US">USA</option>
+              <option value="JP">Japón</option>
+            </select>
+          </div>
+        </fieldset>
+        <!-- Aqui termina Pais -->
+        <fieldset>
+          <legend>Información Extra</legend>
+          <div class="campo">
+            <label for="cliente ">Cliente</label>
+            <input
+              id="cliente"
+              type="radio"
+              name="tipo"
+              value="cliente"
+              required
+            />
+          </div>
+          <div class="campo">
+            <label for="provedor ">Proveedor</label>
+            <input
+              id="Proveedor"
+              type="radio"
+              name="tipo"
+              value="proveedor"
+              required
+            />
+          </div>
+          <div class="campo">
+            <label for="categoria ">Categoría de Interés</label>
+            <input list="categorias" name="categorias" />
+            <datalist id="categorias">
+              <option value="Nuevo catalogo"></option>
+              <option value="Versiones extendidas"></option>
+              <option value="Petición de pelicula"></option>
+              <option value="Queja"></option>
+              <option value="Sugerencia"></option>
+            </datalist>
+          </div>
+        </fieldset>
+        <!-- Aqui termina Formulario -->
+
+        <input class="btn" type="submit" value="Enviar Formulario" />
+        <!-- <button type="submit">Enviar Formulario</button> -->
+        <!-- Aqui termina Información Extra -->
+      </form>
+    </main>
+
+    <!--Pie de pagina-->
+
+    <footer class="site-footer">
+      <div class="grid-footer contenedor">
+        <div>
+          <h3>Categorías</h3>
+          <nav class="footer-menu">
+            <a href="#">Avengers</a>
+            <a href="#">Thor</a>
+            <a href="#">Spider-man </a>
+            <a href="#">Doctor strange</a>
+            <a href="#">Guardianes de la galaxia</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Sobre Nosotros</h3>
+          <nav class="footer-menu">
+            <a href="#"> Nuestra Historia</a>
+            <a href="#"> Misión , Vision y Valores</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#"> Términos del Servicio</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Soporte</h3>
+          <nav class="footer-menu">
+            <a href="#"> Preguntas Frecuentes </a>
+            <a href="#"> Ayuda en Linea</a>
+            <a href="#"> Confianza y Seguridad</a>
+            <a href="#"> Problemas de pago y/o reproducción</a>
+          </nav>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; Todos los derechos Reservados, Mi Peli PLUS by Luis Rojas
+      </p>
+    </footer>
+  </body>
+</html>
